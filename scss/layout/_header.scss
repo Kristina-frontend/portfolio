@@ -1,0 +1,83 @@
+.header {
+    height: 130px;
+
+    &-fixed {
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: auto;
+        padding: 40px 0;
+        background: $bg-white;
+        border-bottom: 1px solid $bg-dark;
+    }
+
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        display: flex;
+        width: 114px;
+        align-items: center;
+        gap: 16px;
+        @include jakarta(17px, 1, 700);
+
+        svg{
+            fill: $color-primary;
+        }
+    }
+
+    .menu {
+        display: flex;
+        gap: 56px;
+
+        .link {
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+
+    &-block {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .swich {
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: url(../img/moon.svg) no-repeat center;
+        transition: 0.3s ease-in-out;
+
+        &.active{
+            background-image: url(../img/sun.svg);
+
+        }
+    }
+
+    .resume {
+        display: block;
+        width: 102px;
+        padding: 16px 24px;
+        text-align: center;
+        border: 1px solid $color-grey-light;
+        line-height: 17px;
+    }
+
+}
+
+.dark{
+    .header .logo svg{
+        fill: $color-white;
+
+    }
+    .header-fixed{
+        background: $bg-dark;
+        border-bottom: 1px solid $color-white;
+    }
+}

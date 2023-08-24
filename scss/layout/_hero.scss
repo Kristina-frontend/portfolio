@@ -1,0 +1,41 @@
+.hero {
+    padding: 110px 0 145px;
+
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 48px 0;
+    }
+
+    &-content {
+        width: 538px;
+    }
+
+    &-title {
+        @include jakarta(44px, 55px, 700);
+        margin: 16px 0 32px;
+
+        span {
+            color: $color-violet;
+        }
+    }
+
+    &-text {
+        font-size: 16px;
+        line-height: 32px;
+        margin-bottom: 40px;
+    }
+
+    &-img{
+        width: 336px;
+
+
+        img{
+            border-radius: 16px;
+        }
+    }
+}
+
+
+

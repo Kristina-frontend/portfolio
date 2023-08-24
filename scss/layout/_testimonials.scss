@@ -1,0 +1,58 @@
+.testimonials {
+    padding: 104px 0 153px;
+    background: $bg-section;
+
+    &-title {
+        margin-bottom: 87px;
+    }
+
+    &-slider {
+        &-wrapper {
+            width: 360px;
+            margin: 0 auto;
+            position: relative;
+            padding-top: 48px;
+        }
+
+        figure {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+
+        }
+
+        &-content {
+            padding: 83px 52px 24px 32px;
+            background: $bg-white;
+        }
+
+        &-text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            margin-bottom: 48px;
+        }
+
+
+        &-name {
+            line-height: 18px;
+            display: block;
+            margin-bottom: 9px;
+        }
+
+        &-job {
+            font-size: 12px;
+            line-height: 15px;
+            color: $color-secondary;
+            display: block;
+        }
+
+    }
+
+
+
+}

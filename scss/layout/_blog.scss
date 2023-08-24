@@ -1,0 +1,106 @@
+.blog {
+
+        padding: 144px 0 176px;
+
+    &-subtitle {
+        display: block;
+        width: 239px;
+        margin: 0 auto;
+    }
+
+    &-title {
+        text-align: center;
+        margin-bottom: 144px;
+    }
+
+    &-wrapper {
+        width: 361px;
+        margin: 0 auto;
+
+        img {
+            border-radius: 8px 8px 0px 0px;
+        }
+    }
+
+    &-content {
+        border-width: 0px 1px 1px 1px;
+        border-style: solid;
+        border-color: $color-grey-light;
+        border-radius: 0px 0px 8px 8px;
+        padding: 16px 15px 24px 16px;
+
+    }
+
+    &-post-title {
+        @include jakarta(16px, 24px, 500);
+        display: block;
+        margin-bottom: 16px;
+        color: $color-primary;
+    }
+
+    &-post-data {
+        display: block;
+        color: $color-secondary;
+        margin-bottom: 20px;
+        width: 94px;
+        background: $bg-section;
+        border-radius: 4px;
+        text-align: center;
+        padding: 4px 0;
+    }
+
+    &-post-text {
+        display: block;
+        color: $color-secondary;
+        font-size: 16px;
+        line-height: 32px;
+        margin-bottom: 42px;
+    }
+
+    &-post-link {
+        display: block;
+        width: 119px;
+        color: $color-secondary;
+        margin: 0 auto;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        position: absolute;
+        left: 50%;
+        bottom: -50px;
+        transform: translateX(-50%);
+
+        li{
+            font-size: 0;
+            line-height: 0;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            border: 1px solid $color-secondary;
+            transition: 0.3s linear;
+
+            &.slick-active{
+                background-color: $bg-dark;
+            }
+        }
+        button{
+            font-size: 0;
+            line-height: 0;
+        }
+    }
+}
+
+.dark .blog{
+    &-post-title{
+        color: $color-grey-light;
+    }
+
+    li.slick-active{
+        background-color: $bg-white;
+    }
+}

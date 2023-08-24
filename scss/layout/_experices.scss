@@ -1,0 +1,141 @@
+.experices {
+    padding: 105px 0 120px;
+    background: $bg-section;
+
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-list {
+        margin-top: 80px;
+        width: 280px;
+    }
+
+    &-item {
+        padding: 16px 0 16px 32px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        width: 100%;
+        background: transparent no-repeat right 32px center;
+        cursor: pointer;
+        transition: 0.3s ease;
+
+        &.active {
+            background: #FFFFFF url(../img/arrow-right.svg) no-repeat right 32px center;
+            border-radius: 4px;
+
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+    }
+
+    &-tabs {
+        margin-top: -40px;
+        position: relative;
+        width: 779px;
+        height: 352px;
+    }
+
+    &-tab {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        z-index: -1;
+        transition: 0.3s ease;
+
+        &.active {
+            opacity: 1;
+            z-index: 2;
+        }
+
+        &-title {
+            display: block;
+            @include jakarta(18px, 23px, 500);
+            margin-bottom: 8px;
+        }
+
+        &-city {
+            display: block;
+            font-weight: 400;
+            line-height: 17px;
+            color: $color-secondary;
+            margin-bottom: 16px;
+        }
+
+        &-year {
+            display: block;
+            line-height: 24px;
+            color: $color-secondary;
+            margin-bottom: 16px;
+        }
+
+        &-tag {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 32px;
+
+            span{
+                border: 1px solid #F1F1F1;
+                border-radius: 4px;
+                padding: 4px 8px;
+                font-size: 12px;
+                line-height: 15px;
+                color: #333333;
+                text-transform: uppercase;
+
+            }
+        }
+
+        &-items{
+            padding-top: 32px;
+            border-top: 1px solid #F1F1F1;
+            
+        }
+
+        &-item{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: $color-secondary;
+            display: flex;
+            gap: 18px;
+            align-items: center;
+            
+            &::before{
+                content: "";
+                width: 10px;
+                height: 2px;
+                background: #D9D9D9;
+                display: block;
+            }
+
+            &:not(:last-child){
+                margin-bottom: 16px;
+            }
+        }
+
+    }
+
+
+}
+
+.dark{
+    .experices{
+        background: $bg-dark;
+
+        &-item.active{
+            background: $color-primary url(../img/arrow-right.svg) no-repeat right 32px center;
+        }
+
+        &-tab-tag span{
+            color: $color-secondary;
+        }
+    }
+}

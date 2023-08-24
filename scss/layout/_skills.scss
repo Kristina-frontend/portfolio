@@ -1,0 +1,113 @@
+.skills {
+  padding: 105px 0 176px;
+
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 148px;
+  }
+
+  &-list {
+    width: 401px;
+    padding: 40px 40px 48px 0;
+  }
+
+  &-item {
+    padding-left: 40px;
+    position: relative;
+
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 2;
+      left: 4px;
+      top: 0;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: $color-grey-light;
+    }
+
+    &:not(:last-child) {
+      padding-bottom: 64px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        left: 12px;
+        top: 8px;
+        bottom: 0;
+        width: 1px;
+        background: $color-grey-light;
+
+      }
+    }
+  }
+
+  &-name {
+    @include jakarta(16px, 20px, 500);
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  &-deg {
+    display: block;
+    font-weight: 400;
+    line-height: 17px;
+    color: $color-secondary;
+  }
+
+  &-date {
+    display: block;
+    line-height: 17px;
+    margin-top: 24px;
+  }
+
+  &-content {
+    max-width: 584px;
+    width: 100%;
+  }
+
+  &-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: $color-secondary;
+    margin-bottom: 64px;
+  }
+
+  .bar-item {
+    margin-bottom: 40px;
+
+    &:first-child .bar-item-line {
+      background: linear-gradient(to right,  $color-violet 60%, #F5F3FE 40%); 
+
+
+    }
+
+    &:nth-child(2) .bar-item-line {
+      background: linear-gradient(to right,  $color-violet 40%, #F5F3FE 40%);
+
+    }
+
+    &:last-child .bar-item-line {
+      background: linear-gradient(to right,  $color-violet 50%, #F5F3FE 50%); 
+    }
+
+    &-name {
+      display: block;
+      line-height: 17px;
+      margin-bottom: 16px;
+    }
+
+    &-line {
+      display: block;
+      height: 8px;
+      border-radius: 2px 0px 0px 2px;
+      width: 100%;
+    }
+  }
+
+}
