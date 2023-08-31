@@ -874,4 +874,21 @@ body.dark {
 
 .dark .contact {
   background: #1e1e1e;
+}
+
+.footer {
+  padding: 88px 0;
+}
+.footer-icons {
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.footer-text {
+  text-align: center;
+  color: #656D72;
+  font-size: 14px;
+  font-weight: 500;
+}
+.footer-text span {
+  width: 400px;
 }/*# sourceMappingURL=main.css.map */
