@@ -28,6 +28,7 @@
         &-content {
             padding: 83px 52px 24px 32px;
             background: $bg-white;
+            border-radius: 8px;
         }
 
         &-text {
@@ -55,4 +56,13 @@
 
 
 
+}
+
+.dark .testimonials{
+    background: $bg-dark;
+
+    &-slider-text,
+    &-slider-name{
+        color: $color-primary;
+    }
 }

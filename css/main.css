@@ -657,6 +657,7 @@ body.dark {
 .testimonials-slider-content {
   padding: 83px 52px 24px 32px;
   background: #FFF;
+  border-radius: 8px;
 }
 .testimonials-slider-text {
   font-weight: 400;
@@ -674,6 +675,13 @@ body.dark {
   line-height: 15px;
   color: #656D72;
   display: block;
+}
+
+.dark .testimonials {
+  background: #1e1e1e;
+}
+.dark .testimonials-slider-text, .dark .testimonials-slider-name {
+  color: #232E35;
 }
 
 .skills {
@@ -829,7 +837,7 @@ body.dark {
   color: #F5F3FE;
 }
 .contact-list {
-  max-width: 335px;
+  max-width: 340px;
   width: 100%;
 }
 .contact-item {
@@ -837,6 +845,33 @@ body.dark {
   background-repeat: no-repeat;
   background-position: left top;
 }
+.contact-item:not(:last-child) {
+  margin-bottom: 48px;
+}
 .contact .item-address {
   background-image: url(../img/adress.svg);
+}
+.contact .item-phone {
+  background-image: url(../img/phone.svg);
+}
+.contact .item-email {
+  background-image: url(../img/email.svg);
+}
+.contact .title {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+}
+.contact .info {
+  display: block;
+  color: #656D72;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.dark .contact {
+  background: #1e1e1e;
 }/*# sourceMappingURL=main.css.map */

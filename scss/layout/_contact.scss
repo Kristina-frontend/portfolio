@@ -67,7 +67,7 @@
     }
 
     &-list{
-        max-width: 335px;
+        max-width: 340px;
         width: 100%;
 
     }
@@ -76,9 +76,40 @@
         padding-left: 80px;
         background-repeat: no-repeat;
         background-position: left top;
+
+        &:not(:last-child){
+            margin-bottom: 48px;
+        }
+
      }
 
      .item-address{
         background-image: url(../img/adress.svg);
      }
+     .item-phone{
+        background-image: url(../img/phone.svg);
+     }
+     .item-email{
+        background-image: url(../img/email.svg);
+     }
+
+     .title {
+        display: block;
+        margin-bottom: 4px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 28px;
+    }
+
+    .info {
+        display: block;
+        color: $color-secondary;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+}
+
+.dark .contact{
+    background: $bg-dark;
 }
