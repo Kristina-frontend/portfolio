@@ -171,7 +171,23 @@ body.dark {
   fill: #232E35;
 }
 
+.btn-up {
+  width: 30px;
+  height: 40px;
+  position: fixed;
+  z-index: 2;
+  bottom: 100px;
+  right: 50px;
+  border-radius: 8px;
+}
+.btn-up svg {
+  fill: #232E35;
+}
+
 .dark .icons a svg {
+  fill: #FFFFFF;
+}
+.dark .btn-up svg {
   fill: #FFFFFF;
 }
 

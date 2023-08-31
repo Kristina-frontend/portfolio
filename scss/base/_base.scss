@@ -90,8 +90,27 @@ body {
     }
 }
 
+.btn-up{
+    width: 30px;
+    height: 40px;
+    // background: $bg-dark;
+    position: fixed;
+    z-index: 2;
+    bottom: 100px;
+    right: 50px;
+    border-radius: 8px;
+
+    svg{
+        fill: $color-primary;
+    }
+}
+
 .dark {
     .icons a svg {
+        fill: $color-white;
+    }
+
+    .btn-up svg{
         fill: $color-white;
     }
 }
