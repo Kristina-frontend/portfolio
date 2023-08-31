@@ -836,4 +836,7 @@ body.dark {
   padding-left: 80px;
   background-repeat: no-repeat;
   background-position: left top;
+}
+.contact .item-address {
+  background-image: url(../img/adress.svg);
 }/*# sourceMappingURL=main.css.map */
