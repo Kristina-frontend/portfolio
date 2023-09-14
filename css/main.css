@@ -112,6 +112,10 @@ button {
   cursor: pointer;
 }
 
+html, body {
+  height: 100vh;
+}
+
 body {
   font-family: "Inter", sans-serif;
   font-size: 14px;
@@ -120,16 +124,28 @@ body {
   color: #232E35;
   background: #FFF;
   transition: background 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
 }
 body.dark {
   color: #FFFFFF;
   background: #1e1e1e;
 }
 
+main {
+  flex: 1;
+}
+
 .container {
   max-width: 1205px;
   width: 100%;
   margin: 0 auto;
+}
+@media (max-width: 1240px) {
+  .container {
+    padding: 0 10px;
+  }
 }
 
 .inner-title {
@@ -223,9 +239,30 @@ body.dark {
 .header .logo svg {
   fill: #232E35;
 }
+@media (max-width: 850px) {
+  .header .nav {
+    background: aliceblue;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    left: 100%;
+    z-index: 2;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .header .menu {
   display: flex;
   gap: 56px;
+}
+@media (max-width: 850px) {
+  .header .menu {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .header .menu .link {
   font-size: 16px;
@@ -254,6 +291,17 @@ body.dark {
   border: 1px solid #f1f1f1;
   line-height: 17px;
 }
+.header .burger {
+  display: none;
+}
+@media (max-width: 850px) {
+  .header .burger {
+    display: block;
+    width: 60px;
+    height: 40px;
+    background: url(../img/burger.svg) no-repeat center;
+  }
+}
 
 .dark .header .logo svg {
   fill: #FFFFFF;
@@ -261,6 +309,9 @@ body.dark {
 .dark .header-fixed {
   background: #1e1e1e;
   border-bottom: 1px solid #FFFFFF;
+}
+.dark .burger {
+  background: url(../img/burger-white.svg) no-repeat center;
 }
 
 .hero {

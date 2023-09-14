@@ -29,11 +29,19 @@ button {
     cursor: pointer;
 }
 
+html, body{
+    height: 100vh;
+}
+
 body {
     @include inter(14px, 1, 500);
     color: $color-primary;
     background: $bg-white;
     transition: background 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+
 
     &.dark {
         color: $color-white;
@@ -41,10 +49,18 @@ body {
     }
 }
 
+main {
+    flex: 1;
+}
+
 .container {
     max-width: 1205px;
     width: 100%;
     margin: 0 auto;
+
+    @media(max-width: 1240px){
+        padding: 0 10px;
+    }
 }
 
 .inner {
