@@ -18,6 +18,7 @@
         display: flex;
         justify-content: center;
         gap: 56px;
+        flex-wrap: wrap;
     }
 
     &-block{
@@ -27,6 +28,12 @@
         align-items: center;
         flex-direction: column;
         padding: 53px 57px;
+
+        @media(max-width: 390px){
+            width: 95%;
+            padding: 45px 35px;
+
+        }
     }
     
     &-icon{
@@ -47,6 +54,7 @@
     &-block-title{
         @include jakarta(16px,20px,500);
         margin-bottom: 16px;
+        text-align: center;
     }
 
     &-text{

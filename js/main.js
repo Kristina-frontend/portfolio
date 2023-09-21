@@ -60,4 +60,9 @@ $(document).ready(function () {
 
   // year
   $(".year").text( (new Date).getFullYear());
+
+  $(".burger").click(function(){
+    $(".burger").toggleClass("active")
+    $(".nav").toggleClass("active")
+  })
 });
