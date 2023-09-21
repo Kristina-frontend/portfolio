@@ -17,6 +17,10 @@
         width: 361px;
         margin: 0 auto;
 
+        @media(max-width: 390px){
+            width: 100%;
+        }
+
         img {
             border-radius: 8px 8px 0px 0px;
         }

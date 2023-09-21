@@ -453,6 +453,11 @@ main {
   display: flex;
   gap: 16px;
 }
+@media (max-width: 590px) {
+  .portfolios-btn {
+    display: none;
+  }
+}
 .portfolios-btn button {
   width: 40px;
   height: 40px;
@@ -477,6 +482,11 @@ main {
   position: relative;
   margin: 0 auto;
   border: 1px solid #f1f1f1;
+}
+@media (max-width: 390px) {
+  .portfolios .slider-wrapper {
+    width: 100%;
+  }
 }
 .portfolios .slider-bottom {
   position: absolute;
@@ -520,6 +530,27 @@ main {
   top: 50%;
   transform: translateY(-50%);
 }
+.portfolios .slick-dots {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+.portfolios .slick-dots li {
+  font-size: 0;
+  line-height: 0;
+  width: 15px;
+  height: 15px;
+  background: #656D72;
+  border-radius: 50%;
+}
+.portfolios .slick-dots li.slick-active {
+  background: #7E74F1;
+}
+.portfolios .slick-dots button {
+  font-size: 0;
+  line-height: 0;
+}
 
 .experices {
   padding: 105px 0 120px;
@@ -528,6 +559,12 @@ main {
 .experices-wrapper {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 1120px) {
+  .experices-wrapper {
+    flex-wrap: wrap;
+    gap: 85px;
+  }
 }
 .experices-list {
   margin-top: 80px;
@@ -553,7 +590,8 @@ main {
 .experices-tabs {
   margin-top: -40px;
   position: relative;
-  width: 779px;
+  max-width: 779px;
+  width: 100%;
   height: 352px;
 }
 .experices-tab {
@@ -654,6 +692,11 @@ main {
 .blog-wrapper {
   width: 361px;
   margin: 0 auto;
+}
+@media (max-width: 390px) {
+  .blog-wrapper {
+    width: 100%;
+  }
 }
 .blog-wrapper img {
   border-radius: 8px 8px 0px 0px;

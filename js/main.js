@@ -12,29 +12,52 @@ $(document).ready(function () {
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
+    responsive: [{
+      breakpoint: 1201,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 801,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 591,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+      }
+    }
+  ]
   })
 
-  $(".next").click(function(){
+  $(".next").click(function () {
     $(".portfolios-slider").slick("slickNext")
   })
 
-  $(".prev").click(function(){
+  $(".prev").click(function () {
     $(".portfolios-slider").slick("slickPrev")
   })
 
-  $(".portfolios-btn .btn").click(function(){
+  $(".portfolios-btn .btn").click(function () {
     $(".portfolios-btn .btn").removeClass("active");
 
     $(this).addClass("active");
   })
 
   // tabs
-  $(".experices-list").on("click",".experices-item:not(.active)", function(){
+  $(".experices-list").on("click", ".experices-item:not(.active)", function () {
     $(this)
       .addClass("active")
       .siblings()
       .removeClass("active")
-      .closest(".experices-wrapper") 
+      .closest(".experices-wrapper")
       .find(".experices-tab")
       .removeClass("active")
       .eq($(this).index())
@@ -47,7 +70,23 @@ $(document).ready(function () {
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
-    dots: true
+    dots: true,
+    responsive: [{
+      breakpoint: 1201,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 801,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    },
+   
+  ]
   })
 
   // slider review
@@ -59,10 +98,12 @@ $(document).ready(function () {
   })
 
   // year
-  $(".year").text( (new Date).getFullYear());
+  $(".year").text((new Date).getFullYear());
 
-  $(".burger").click(function(){
+  $(".burger").click(function () {
     $(".burger").toggleClass("active")
     $(".nav").toggleClass("active")
   })
+
+
 });

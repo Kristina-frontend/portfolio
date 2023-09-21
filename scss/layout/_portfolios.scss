@@ -12,6 +12,11 @@
         display: flex;
         gap: 16px;
 
+        @media(max-width: 590px){
+            display: none;
+            
+        }
+
         button {
             width: 40px;
             height: 40px;
@@ -41,6 +46,10 @@
         position: relative;
         margin: 0 auto;
         border: 1px solid $color-grey-light;
+        
+        @media(max-width: 390px){
+            width: 100%;
+        }
     }
 
     .slider-bottom {
@@ -85,6 +94,29 @@
             transform: translateY(-50%);
         }
     }
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 30px;
 
+        li {
+            font-size: 0;
+            line-height: 0;
+            width: 15px;
+            height: 15px;
+            background: $color-secondary;
+            border-radius: 50%;
+
+            &.slick-active{
+                background: $color-violet;
+            }
+        }
+
+        button {
+            font-size: 0;
+            line-height: 0;
+        }
+    }
    
 }
