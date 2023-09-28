@@ -4,7 +4,12 @@
   &-wrapper {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 148px;
+
+    @media(max-width: 1150px){
+      gap: 50px;
+    }
   }
 
   &-list {

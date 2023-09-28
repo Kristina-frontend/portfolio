@@ -95,6 +95,22 @@ $(document).ready(function () {
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
+    responsive: [{
+      breakpoint: 1201,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 801,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    },
+   
+  ]
   })
 
   // year

@@ -12,6 +12,10 @@
             margin: 0 auto;
             position: relative;
             padding-top: 48px;
+
+            @media(max-width: 390px){
+                width: 100%;
+            }
         }
 
         figure {

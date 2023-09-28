@@ -788,6 +788,11 @@ main {
   position: relative;
   padding-top: 48px;
 }
+@media (max-width: 390px) {
+  .testimonials-slider-wrapper {
+    width: 100%;
+  }
+}
 .testimonials-slider figure {
   width: 96px;
   height: 96px;
@@ -833,7 +838,13 @@ main {
 .skills-wrapper {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 148px;
+}
+@media (max-width: 1150px) {
+  .skills-wrapper {
+    gap: 50px;
+  }
 }
 .skills-list {
   width: 401px;
@@ -930,6 +941,7 @@ main {
   gap: 104px;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .contact-form {
   max-width: 600px;
