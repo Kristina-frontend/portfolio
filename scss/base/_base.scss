@@ -47,6 +47,10 @@ body {
         color: $color-white;
         background: $bg-dark;
     }
+
+    &.hiden{
+        overflow-y: hidden;
+    }
 }
 
 main {
